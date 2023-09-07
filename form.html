@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div>
+        <h1 class="text-primary">Personal info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+        <form action="">
+          <div class="d-flex gap-5 divName">
+            <label for="" class="mb-2">Name</label>
+            <span class="spanName"
+              ><p style="color: red">(invalid name)</p></span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control mb-3 nameInput"
+            placeholder="e.g. Stephen King"
+            required
+          />
+          <div class="d-flex gap-5 divEmail">
+            <label for="" class="mb-2">Email Address</label>
+            <span class="spanEmail"
+              ><p style="color: red">(invalid email)</p></span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control mb-3 emailInput"
+            placeholder="e.g. stephenking@lorem.com"
+            required
+          />
+          <div class="d-flex gap-5 divPhoneNumber">
+            <label for="" class="mb-2">Phone Number</label>
+            <span class="spanPhoneNumber"
+              ><p style="color: red">(invalid number)</p></span
+            >
+          </div>
+
+          <input
+            type="text"
+            class="form-control mb-3 phoneNumberInput"
+            placeholder="e.g. +1 234 567 890"
+            required
+          />
+          <div class="d-flex justify-content-end mt-5">
+            <button type="button" class="btn btn-lg btn-primary px-4 py-2">
+              Next Step
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
