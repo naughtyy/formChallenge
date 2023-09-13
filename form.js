@@ -5,6 +5,7 @@ const phoneNumber = document.querySelector(".phoneNumberInput");
 const spanName = document.querySelector(".spanName");
 const spanEmail = document.querySelector(".spanEmail");
 const spanPhoneNumber = document.querySelector(".spanPhoneNumber");
+const successJS = document.querySelector(".successJS");
 
 const moroccanPhoneNumberPattern = /^(05|06|07)[0-9]{8}$/;
 const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -32,5 +33,8 @@ submit.addEventListener("click", () => {
     spanPhoneNumber.style.display = "inline";
   } else {
     spanPhoneNumber.style.display = "none";
+  }
+  if (name.value.length >= 2 && testingEmail && testingNumber) {
+    successJS.innerHTML = `<div class="success"><h6>The form was submitted successfully</h6></div>`;
   }
 });

@@ -8,59 +8,69 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="form.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Montserrat:wght@200;700&family=Quicksand:wght@700&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form</title>
   </head>
   <body>
-    <div class="container mt-5">
-      <div>
-        <h1 class="text-primary">Personal info</h1>
-        <p>Please provide your name, email address, and phone number.</p>
-        <form action="">
-          <div class="d-flex gap-5 divName">
-            <label for="" class="mb-2">Name</label>
-            <span class="spanName"
-              ><p style="color: red">(invalid name)</p></span
-            >
-          </div>
-          <input
-            type="text"
-            class="form-control mb-3 nameInput"
-            placeholder="e.g. Stephen King"
-            required
-          />
-          <div class="d-flex gap-5 divEmail">
-            <label for="" class="mb-2">Email Address</label>
-            <span class="spanEmail"
-              ><p style="color: red">(invalid email)</p></span
-            >
-          </div>
-          <input
-            type="text"
-            class="form-control mb-3 emailInput"
-            placeholder="e.g. stephenking@lorem.com"
-            required
-          />
-          <div class="d-flex gap-5 divPhoneNumber">
-            <label for="" class="mb-2">Phone Number</label>
-            <span class="spanPhoneNumber"
-              ><p style="color: red">(invalid number)</p></span
-            >
-          </div>
-
-          <input
-            type="text"
-            class="form-control mb-3 phoneNumberInput"
-            placeholder="e.g. +1 234 567 890"
-            required
-          />
-          <div class="d-flex justify-content-end mt-5">
-            <button type="button" class="btn btn-lg btn-primary px-4 py-2">
-              Next Step
-            </button>
-          </div>
-        </form>
+    <div class="successJS"></div>
+    <article class="container mt-5 d-flex" style="height: 100vh">
+      <div style="width: 100%; height: 80%" class="right-section">
+        <img src="form.jpg" alt="" />
+        <!-- <h2 class="text-center">Form Challenge</h2> -->
       </div>
-    </div>
+      <div style="width: 100%; height: 80%; background-color: #4293e5">
+        <main class="p-5">
+          <h1>Let's start!</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <form action="">
+            <div class="d-flex gap-1 divName">
+              <label for="" class="mb-2">Name</label>
+              <span class="spanName"
+                ><p style="color: red">(invalid name)</p></span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control mb-3 nameInput"
+              placeholder="e.g. Stephen King"
+              required
+            />
+            <div class="d-flex gap-1 divEmail">
+              <label for="" class="mb-2">Email Address</label>
+              <span class="spanEmail"
+                ><p style="color: red">(invalid email)</p></span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control mb-3 emailInput"
+              placeholder="e.g. stephenking@lorem.com"
+              required
+            />
+            <div class="d-flex gap-1 divPhoneNumber">
+              <label for="" class="mb-2">Phone Number</label>
+              <span class="spanPhoneNumber"
+                ><p style="color: red">(invalid number)</p></span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control mb-3 phoneNumberInput"
+              placeholder="e.g. +1 234 567 890"
+              required
+            />
+            <div class="d-flex justify-content-end mt-5">
+              <button type="button" class="btn px-4 py-2">Next Step</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </article>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="form.js"></script>

@@ -1,0 +1,33 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h2 {
+  color: #317ecd;
+  font-weight: 700;
+}
+p {
+  font-size: 13px;
+  color: #d5d3d3cf;
+}
+h1 {
+  color: white;
+}
+label {
+  color: white;
+}
+button {
+  color: #2d2437;
+  background: white !important;
+  /*#f15852*/
+}
+.success {
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: #f35549;
+  color: white;
+}
